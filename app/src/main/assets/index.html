@@ -18,7 +18,7 @@ button{font:inherit;border:0;border-radius:6px;background:var(--red);color:#fff;
 @media print{header,.tabs,.noprint{display:none!important}.panel{display:none!important}#reports.panel.active{display:block!important}.card{border:0;box-shadow:none}.tablewrap{overflow:visible}}
 </style></head>
 <body>
-<header><h1>CHRISTRACKER</h1><p>Teacher Attendance Tracker · School Year <span id="headerYear">2026–2027</span></p></header>
+<header><img src="logo.png" alt="CHRISTRACKER Logo" style="width:90px;height:90px;object-fit:contain;display:block;margin:0 auto 10px;"><h1>CHRISTRACKER</h1>
 <div class="wrap">
 <nav class="tabs noprint"><button data-tab="dashboard">Dashboard</button><button data-tab="daily">Daily Attendance</button><button data-tab="students">Students &amp; Classes</button><button data-tab="reports">Reports</button><button data-tab="backup">Backup / Restore</button></nav>
 <section id="dashboard" class="panel active"><div class="card"><h2>Dashboard</h2><div class="row"><div class="field"><label>Class</label><select id="dashClass"></select></div><div class="field"><label>Date</label><input id="dashDate" type="date"></div></div></div><div class="card"><div class="grid" id="stats"></div></div><div class="card"><h2>Attendance Summary</h2><div class="tablewrap"><table><thead><tr><th>Status</th><th>Number of Students</th></tr></thead><tbody id="dashSummary"></tbody></table></div></div></section>
